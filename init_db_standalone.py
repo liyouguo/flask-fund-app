@@ -10,7 +10,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
-# 定义模型类（与现有模型保持一致）
 class User(db.Model):
     __tablename__ = 'users'
     
